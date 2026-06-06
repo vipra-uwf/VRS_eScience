@@ -1,0 +1,66 @@
+.nav-home {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #b50000;
+    padding: 1rem;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 80vh;
+    border-radius: 25px;
+    background-color: #444444;
+    color: white;
+    scrollbar-width: thin;
+}
+
+md-block {
+    display: block;
+    padding: 1rem;
+    font-size: 14px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+.backbutton {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #b50000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.backbutton:hover {
+    background-color: #a00000;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #b50000;
+    color: white;
+    width: 300px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+    background-color: #a00000;
+}
+
+.custom-red {
+    color: #b50000 !important;
+}
