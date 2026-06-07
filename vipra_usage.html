@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>VIPRA Usage Instructions</title>
+    </head>
+    <body>
+        <h1>VIPRA Usage Instructions</h1>
+        <div>
+            <a href="./" class="backbutton">Back to Navigation</a>
+        </div>
+        <div class="textblock">
+            <p>The VIPRA simulation software is available at the following link: <a href="https://github.com/vipra-uwf/VIPRA" target="_blank">https://github.com/vipra-uwf/VIPRA</a>. Download the repository and place all of the files from the generated code < VIPRA_directory >\VIPRA\modules\model.</p>
+            <p>You will also need to add the additional files to the simulator and place them at the locations below:</p>
+            <ul>
+                <li><a href="">a320_pedestrians.json</a> -> VIPRA/maps/pedestrians/</li>
+                <li><a href="">museum_quads.dxf</a> -> VIPRA/temp/</li>
+                <li><a href="">module_params_sf.json</a> -> VIPRA/temp/</li>
+                <li><a href="">sim_config_sf.json</a> -> VIPRA/temp/</li>
+            </ul>
+            <p>If you have Docker installed, you can build the simulation using the provided script (vipra.sh) and Dockerfile.</p>
+            <p>Be sure that the file is in the correct location within the VIPRA directory. You can then run "make" in the home directory to build the simulator</p>
+
+            <p>Afterwards, you can run the simulation by executing the following command:</p>
+            <p>./vipra -map=temp/museum_quads.dxf -peds=maps/pedestrians/a320_pedestrians.json -params=temp/module_params_sf.json -modules=temp/sim_config_sf.json</p>
+        </div>
+    </body>
+</html>
