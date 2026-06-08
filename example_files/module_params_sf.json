@@ -1,0 +1,59 @@
+{
+  "simulation": {
+    "main": {
+      "max_timestep": 40000,
+      "timestep_size": 0.005,
+      "output_frequency": 100,
+      "random_seed": 12346345,
+      "output_params": true
+    }
+  },
+  "model": {
+    "SocialForce": {}
+  },
+  "goals": {
+    "PotentialField": {
+      "endGoalType": "exit",
+      "cellSize": 0.1,
+      "densityCellSize": 0.2,
+      "densityWeight": 1,
+      "densityUpdateFrequency": 10
+    },
+    "AStar": {
+      "endGoalType": "exit",
+      "gridSize": 0.04,
+      "goalRange": 0.15,
+      "closestObstacle": 0.05,
+      "pathSmoothing": 0.15
+    }
+  },
+  "pedestrians": {
+    "Base": {
+      "use_file": true,
+      "spawn_random": false,
+      "random_count": 100
+    },
+    "SpatialGrid": {
+      "gridSize": 0.5
+    }
+  },
+  "map": {
+    "QuadTree": {
+      "minQuadSize": 0.05
+    }
+  },
+  "output": {
+    "coordinator": {
+      "output_dir": "./sim_output"
+    },
+    "TrajectoriesJson": {
+      "filename": "trajectories.json"
+    }
+  },
+  "behavior_model": {
+    "main": {
+      "behaviors_dir": "behaviors",
+      "behaviors": []
+    }
+  }
+}
